@@ -1,16 +1,86 @@
-# React + Vite
+# 📇 Contact App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A contact management app built with **React** and **plain CSS**, with no external packages. Users can add, edit, delete and search contacts, with form validation and confirmation modals for every action.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- ➕ Add a new contact with form validation
+- ✏️ Edit an existing contact
+- 🗑️ Delete a contact
+- ☑️ Select multiple contacts and delete them in bulk
+- 🔍 Search contacts by name or email
+- ✅ Validation for name, email, job and phone number (including duplicate email check)
+- 💬 Confirmation modal before every action (add, edit, delete, bulk delete)
+- 🔔 Toast notifications after each successful action
+- 💾 Contacts are saved in `localStorage`, so they stay after a page refresh
+- 🌐 RTL layout with Persian (Farsi) UI
+- 📱 Responsive design
 
-## React Compiler
+## 📸 Screenshots
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Contact list
 
-## Expanding the ESLint configuration
+The main page shows all contacts with search, add and multi-select buttons.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Contact list](./screenshots/list.png)
+
+### Search
+
+Contacts can be filtered instantly by name or email.
+
+![Search](./screenshots/search.png)
+
+### Confirmation modal
+
+Every action (add, edit, delete, bulk delete) needs the user's confirmation.
+
+![Confirmation modal](./screenshots/modal.png)
+
+## 🛠️ Built With
+
+- React (Vite)
+- Hooks: `useState`, `useEffect`
+- Plain CSS (no UI libraries)
+
+## 🚀 Getting Started
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/NazaninSalehfar/contact-app.git
+
+# 2. Go to the project folder
+cd contact-app
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm run dev
+```
+
+Then open `http://localhost:5173` in your browser.
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── ContactForm.jsx    # Add / edit form with validation
+│   ├── ContactItem.jsx    # A single contact row
+│   ├── ContactList.jsx    # List of contacts
+│   ├── Modal.jsx          # Confirmation modal
+│   ├── SearchBar.jsx      # Search input
+│   ├── Toast.jsx          # Success notification
+│   └── Toolbar.jsx        # Add, select and bulk delete buttons
+├── data/
+│   └── initialContacts.js # Initial sample data
+├── utils/
+│   └── validators.js      # Form validation rules
+├── App.jsx                # Main component and app state
+└── App.css                # Styles
+```
+
+## 👩‍💻 Author
+
+**Nazanin Salehfar**
+GitHub: [@NazaninSalehfar](https://github.com/NazaninSalehfar)
