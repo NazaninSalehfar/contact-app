@@ -2,6 +2,8 @@
 
 A contact management app built with **React** and **plain CSS**, with no external packages. Users can add, edit, delete and search contacts, with form validation and confirmation modals for every action.
 
+🔗 **Live Demo:** [https://contact-app-xxxx.vercel.app](https://contact-app-one-wine.vercel.app/)
+
 ## ✨ Features
 
 - ➕ Add a new contact with form validation
